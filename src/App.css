@@ -1,26 +1,81 @@
-.container{
-  text-align:center ;
-  padding: 50px;
-  min-height: 100vh;
-  background-color: aquamarine;
+/* App.css */
+
+/* General styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:burlywood;
 }
-.btn{
-  margin:10px;
-  padding:10px 25px;
-  font-size: 30px;
-  background-color: antiquewhite;
-  color:red;
+
+/* Container */
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Dark mode */
+.container.dark {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+/* Heading */
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+/* Input */
+input[type="text"] {
+  padding: 10px;
+  width: 80%;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin: 10px 5px;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
 }
-.reset{
-  background-color: blueviolet;
+
+/* Specific button styles */
+.btn {
+  background-color: #007bff;
+  color:blue;
 }
-.container.dark{
-  background-color: black;
-  color:white;
+
+.btn:hover {
+  background-color: white;
+  text-align: center;
 }
-.container.light{
-  background-color:white;
-  color:white;
+
+.reset {
+  background-color: #dc3545;
+  color: blue;
+}
+
+.reset:hover {
+  background-color: #a71d2a;
+}
+
+/* Show/Hide container */
+.show {
+  display: block;
+}
+
+.hide {
+  display: block; /* keep as block to retain layout, or change to 'none' to fully hide */
 }
